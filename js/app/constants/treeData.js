@@ -1,5 +1,6 @@
 (function () {
     'use strict';
+    /*This is the sample constant JSON for create demo Tree*/
     angular.module('TreeCreator').constant('TREE_DATA', {
         TREE: [
             {

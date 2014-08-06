@@ -1,3 +1,4 @@
+/*Demo controller*/
 angular.module('TreeCreator').controller("TreeController", [
     '$scope',
     'TREE_DATA',

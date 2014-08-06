@@ -1,3 +1,4 @@
+/*This the directive to create child tree nodes at each level*/
 angular.module('TreeCreator').directive('childTree', function ($compile) {
     "use strict";
     return {
@@ -11,6 +12,7 @@ angular.module('TreeCreator').directive('childTree', function ($compile) {
                     subChilds = null,
                     subParents = null;
 
+                /*Expand or collapse functionality DOM manipulation logic*/
                 if (target.hasClass('collapse') && childs.length <= 0) {
                     return;
                 } else if (target.hasClass('collapse') && childs.length > 0) {
@@ -36,6 +38,7 @@ angular.module('TreeCreator').directive('childTree', function ($compile) {
                 target.toggleClass('collapse');
             };
 
+            /*If particular JSON node has child nodes then again add parent and so on*/
             if (angular.isDefined(scope.childnode.children) && scope.childnode.children.length > 0) {
                 var child = $compile('<tree tree-data="childnode.children" is-child="true"></tree>')(scope);
                 elm.append(child);
