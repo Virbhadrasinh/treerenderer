@@ -29,7 +29,6 @@ This is a reusable component which helps you to create folder hierarchy using JS
          "children": [
              {
                  "elementName": "Image Formatter"
-
              },
              {
                  "elementName": "Anchor Formatter",
