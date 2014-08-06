@@ -4,7 +4,7 @@ This is a reusable component which helps you to create folder hierarchy using JS
 <a href="http://virbhadrasinh.github.io/treerenderer/">Demo</a>
 
 ### JSON should be following format
-
+<pre>
 [
      {
          "id": "1",
@@ -41,6 +41,7 @@ This is a reusable component which helps you to create folder hierarchy using JS
          ]
      }
  ]
+ </pre>
 
 To use this you need following:
 * Angularjs
