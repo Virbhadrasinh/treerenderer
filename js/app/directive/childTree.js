@@ -1,4 +1,4 @@
-/*This the directive to create child tree nodes at each level*/
+/*This is the directive to create child tree nodes at each level*/
 angular.module('TreeCreator').directive('childTree', function ($compile) {
     "use strict";
     return {
